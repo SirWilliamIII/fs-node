@@ -5,10 +5,18 @@ const encoding = 'utf-8'
 const path = 'writeme.txt'
 
 let readme = fs.readFileSync(filePath, encoding)
-
-
 let writeme = fs.writeFileSync(path, filePath)
 
 
-console.log(writeme)
+//fs.unlinkSync('../writeme.txt')
+//fs.unlinkSync('readme.txt')
+
+
+/*let a = fs.readFileSync('server2.js', 'utf-8')
+
+let b = fs.writeFileSync('blah.js', a)
+
+
+console.log(b)*/
+
 
