@@ -6,7 +6,9 @@ const path = 'writeme.txt'
 
 let readme = fs.readFileSync(filePath, encoding)
 
-let writeme = fs.writeFileSync(path, readme)
+
+let writeme = fs.writeFileSync(path, filePath)
+
 
 console.log(writeme)
 
